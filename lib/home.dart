@@ -25,9 +25,6 @@ class _HomePageState extends State<HomePage> {
               ),
               margin: EdgeInsets.only(right: 30.0),
             ),
-            // SizedBox(
-            //   width: 50,
-            // ),
             Center(
               child: Icon(
                 FontAwesomeIcons.twitter,
@@ -39,20 +36,20 @@ class _HomePageState extends State<HomePage> {
                 icon: Icon(
                   Icons.settings,
                   color: Colors.black,
-                ))
+                )),
           ],
         ),
-        elevation: 4.0,
+        elevation: 0,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            Divider(),
             Container(
                 child: Container(
                     child: ListView(
               shrinkWrap: true,
               children: [
-                Divider(),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -139,6 +136,135 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ))),
+            Container(
+              child: Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "untuk di ikuti :",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SingleChildScrollView(
+                      physics: BouncingScrollPhysics(
+                          parent: AlwaysScrollableScrollPhysics()),
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 30,
+                                    foregroundImage:
+                                        AssetImage("assets/download.jpg"),
+                                  ),
+                                  Text(
+                                    "kompas TV",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("@kompastv")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 30,
+                                    foregroundImage:
+                                        AssetImage("assets/download.jpg"),
+                                  ),
+                                  Text(
+                                    "kompas TV",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("@kompastv")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 30,
+                                    foregroundImage:
+                                        AssetImage("assets/download.jpg"),
+                                  ),
+                                  Text(
+                                    "kompas TV",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("@kompastv")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 30,
+                                    foregroundImage:
+                                        AssetImage("assets/download.jpg"),
+                                  ),
+                                  Text(
+                                    "kompas TV",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("@kompastv")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 30,
+                                    foregroundImage:
+                                        AssetImage("assets/download.jpg"),
+                                  ),
+                                  Text(
+                                    "kompas TV",
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("@kompastv")
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                  ],
+                ),
+              ),
+            ),
             Container(
                 child: Container(
                     child: ListView(
